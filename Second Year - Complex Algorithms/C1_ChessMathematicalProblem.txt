@@ -1,0 +1,39 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+char szach[20][20];
+unsigned long long odp[1050000];
+
+int main(){
+	int z;
+	cin >> z;
+	while(z--){
+		int a;
+		cin >> a;
+		
+		int zer = pow( 2, a );
+		for(int i=0;i<zer;i++) odp[i]=0;
+		
+		for(int i=0;i<a;i++){
+			for(int j=0;j<a;j++){
+				cin >> szach[i][j];
+			}
+		}
+		//cout << "lel" << endl;
+		odp[0]=1;
+		
+		for(int i=1;i<zer;i++){
+			 //cout << i << " " << __builtin_popcount(i) << endl;
+			 int liczba = __builtin_popcount(i);
+			for(int j=0;j<a;j++){
+				if(((i>>j) & 1 )&&(szach[liczba-1][j]=='.')){
+					odp[i]+=odp[i - (1 << j)];
+				}
+			}
+		}
+		
+		cout << odp[zer-1]<< endl;
+	}
+}
