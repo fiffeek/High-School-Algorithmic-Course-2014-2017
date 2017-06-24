@@ -1,0 +1,43 @@
+The material we covered (probably not all of it though) on the course:
+
+Chinese remainder theorem
+LCA
+Backpack problem
+Longest Increasing Sequence
+Sweep line method
+Triangulation
+STL stack
+Binary search
+Cut vertex
+Optimal binary search tree
+Extended euclidean algorithm
+Binary tree
+STL queue
+LAQ
+Bridges
+Manacher's algorithm
+Karp-Miller-Rosenberg's algorithm
+Rabin-Miller's test
+Ford–Fulkerson algorithm
+Belman-Ford's Algorithm
+Fast powering
+DFS
+Eulerian cycle
+Bigraphs
+Minimum Spanning Tree
+Sprague–Grundy theorem
+Aho-Corasick's algorithm
+The longest path in DAG
+BFS
+Hamiltonian cycle
+heaps
+Topological sorting
+Dijkstra's algorithm
+Convex hull
+Longest common subsequence
+Knuth-Morris-Pratt's Algorithm
+Eulerian Path
+Hamiltonian path
+Sort algorithm (computational complexity O(n log n))
+Strong Connected Components
+Gaussian elimination
